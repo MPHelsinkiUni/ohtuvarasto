@@ -12,6 +12,11 @@ indent-string='    '
 max-nested-blocks=2
 max-statements=10
 
+[MESSAGES CONTROL]
+
+disable=missing-module-docstring,missing-class-docstring,missing-function-docstring
+
 [DESIGN]
 
 max-args=5
+
