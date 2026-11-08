@@ -16,6 +16,8 @@ jobs:
           python-version: "3.14"
       - name: Install dependencies
         run: uv sync
+      - name: Install dependencies, again
+        run: uv sync --dev
       - name: Run tests
         run: uv run coverage run --branch -m pytest
       - name: Coverage report
@@ -24,3 +26,5 @@ jobs:
         uses: codecov/codecov-action@v5
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Run Pylint
+        run: uv run pylint src/
