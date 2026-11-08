@@ -1,0 +1,17 @@
+[MAIN]
+
+persistent=yes
+
+[FORMAT]
+
+max-line-length=80
+indent-string='    '
+
+[REFACTORING]
+
+max-nested-blocks=2
+max-statements=10
+
+[DESIGN]
+
+max-args=5
